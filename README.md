@@ -1,2 +1,2 @@
 # webdev-course
-A web design courses taken in school
+A web design course taken in school
