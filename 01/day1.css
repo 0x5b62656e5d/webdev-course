@@ -1,0 +1,25 @@
+body {
+    margin: 20px;
+    text-align: center;
+    justify-items: center;
+    background-image: url('https://cdn.wallpapersafari.com/59/66/mqfP5D.jpg');
+}
+
+h1 {
+    padding: -5px;
+}
+
+h1 > mark {
+    color: rgb(226, 189, 243);
+    background-color: rgb(20, 112, 112);
+}
+
+ul, ol { list-style-position: inside; }
+
+p, h3 {
+    color: pink;
+}
+
+p { font-size: 20px; }
+
+h3 { font-size: 30px; }
