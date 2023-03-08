@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+body {
+    font-family: 'Gloock', serif;
+}
+
+h1, h2 {
+    color: darkgreen;
+}
+
+p {
+    color: palevioletred;
+}
+
+.header1 {
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(255, 196, 252);
+    border-width: 4px;
+    border: dashed;
+    border-color: black;
+    max-width: 350px;
+    border-radius: 25px;
+}
+
+#p2 {
+    color: brown;
+}
+
+.centered {
+    text-align: center;
+    color: #00a16c;
+}
+
+.bg1 {
+    background-color: black;
+}
+
+.para {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(0, 9, 128), rgb(90, 0, 150));
+    border-style: groove dashed solid;
+    border-color: pink grey lightblue;
+    border-width: 15px 10px 15px 10px;
+    width: 900px;
+}
+
+#susdc {
+    display: block;
+    margin: auto;
+    margin-top: 15px;;
+}
+
+#inlineLink > li{
+    display: inline
+}
