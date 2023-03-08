@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+/* Width */
+::-webkit-scrollbar {
+	width: 11px;
+	background: lightblue;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background: lightblue;
+	border-radius: 75px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ffb3ff;
+	border-radius: 95px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ff83ff;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    border-radius: 20px;
+    width: 70%;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 390px;
+    padding-top: 290px;
+}
+
+#header {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 64px;
+}
+
+#FYI {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+#Other {
+    font-size: 28px;
+}
+
+.item {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.entry {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    margin: auto;
+}
+
+#name {
+    font-size: 32px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#explain {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    margin: auto;
+    padding-top: 540px;
+    padding-bottom: 460px;
+}

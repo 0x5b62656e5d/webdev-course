@@ -1,0 +1,55 @@
+/* Suits */
+section:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+/* White House Down */
+section:nth-child(3) {
+    color: white;
+    background-color: #07475b;
+}
+
+/* Shooter (2018) */
+section:nth-child(4) {
+    color: white;
+    background-color: #f38e84;
+}
+
+/* Shooter (2007) */
+section:nth-child(5) {
+    color: white;
+    background-color: #4386a1;
+}
+
+/* Designated Survivor */
+section:nth-child(6) {
+    background-color: #51b3da;
+}
+
+/* Olympus has Fallen */
+section:nth-child(7) {
+    color: white;
+    background-color: #986841;
+}
+
+/* The Final Table */
+section:nth-child(8) {
+    color: white;
+    background-color: #8276a9;
+}
+
+/* Hells Kitchen */
+section:nth-child(9) {
+    background-color: #fccc6e;
+}
+
+/* 6 Underground */
+section:nth-child(10) {
+    background-color: #e1ebdf;
+}
+
+/* Money Heist */
+section:nth-child(11) {
+    background-color: #97b6a2;
+}
+
