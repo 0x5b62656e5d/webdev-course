@@ -1,0 +1,130 @@
+@import url(./fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content {
+    margin: 30px;
+}
+
+#parallax1 {
+    height: 16vw;
+    background-image: url("../../img/aboutshop.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 20px;
+    opacity: 70%;
+
+	font-family: "Salted Mocha";
+	font-size: 4vw; /*6rem*/
+	text-align: center;
+
+    margin-bottom: 55px;
+}
+
+#parallax2 {
+    height: 23vw;
+    background-image: url("../../img/aboutmecover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 20px;
+    opacity: 70%;
+
+	font-family: "Salted Mocha";
+	font-size: 4vw; /*6rem*/
+	text-align: center;
+
+    margin-bottom: 55px;
+}
+
+#parallax1 h3, #parallax2 h3 {
+	padding: 8.3%;
+    animation: fadeIn 1.2s both;
+}
+
+.aboutMe, .aboutShop {
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-bottom: 3vw;
+}
+
+.aboutShop #image {
+    height: 28vw;
+    margin-bottom: 35px;
+}
+
+.aboutMe #image {
+    width: 15vw;
+}
+
+#selfie {
+    float: left;
+    max-width: 90%;
+    margin: auto;
+    animation: fadeIn 1.2s both;
+    border-radius: 100%;
+}
+
+#para {
+    float: right;
+    overflow: auto;
+    max-width: 50%;
+    margin-top: 3.6vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    animation: fadeIn 1.2s both;
+}
+
+.social {
+    clear: both;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social a:hover p {
+    color: rgb(149, 41, 199);
+  	text-shadow:
+    	0 0 7px rgb(149, 41, 199),
+    	0 0 10px rgb(149, 41, 199),
+    	0 0 21px rgb(149, 41, 199);
+}
+
+#insta {
+    height: 40px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .aboutMe, .aboutShop {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    #image {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,179 @@
+@import url(./fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+body {
+    margin: 0;
+}
+
+p, h3, a {
+	margin: 0;
+}
+
+h3 {
+	max-width: 70%;
+}
+
+a {
+	max-width: 40%;
+}
+
+.content {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.content #Macchiato {
+	max-width: 25%;
+}
+
+.content #Croissant {
+	max-width: 30%;
+}
+
+#parallax1 {
+    height: 33vw;
+    background-image: url("../../img/parallax1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 70%;
+
+	font-family: "Salted Mocha";
+	font-size: 4vw; /*6rem*/
+	text-align: center;
+}
+
+#parallax1 h3 {
+	padding: 15%;
+    animation: fadeIn 1.2s both;
+}
+
+#parallax2 {
+    height: 31vw;
+    background-image: url("../../img/parallax2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 70%;
+
+	font-family: "Salted Mocha";
+	font-size: 4vw; /*5rem*/
+	text-align: center;
+}
+
+#parallax2 a {
+	float: right;
+	margin: 13%;
+	margin-left: 15%;
+	margin-bottom: 1%;
+	color: black;
+	text-decoration: none;
+    animation: fadeIn 1.2s both;
+}
+
+#drinksButton, #bakedButton {
+    animation: fadeIn 1.2s both;
+    border-radius: 35px;
+	font-size: 1.3rem;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#drinksButton {
+	background-color: #fcfff3
+}
+
+#bakedButton {
+	float: left;
+	background-color: #e4e7d5;
+}
+
+#Macchiato {
+	float: left;
+	margin: auto;
+	padding: 2%;
+	padding-bottom: 0;
+	padding-left: 10%;
+    animation: fadeIn 1.2s both;
+}
+
+#parallax3 {
+    height: 33.5vw;
+    background-image: url("../../img/parallax3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 70%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+	font-family: "Salted Mocha";
+	font-size: 4vw; /*6rem*/
+	text-align: center;
+}
+
+#parallax3 a {
+	margin: 13%;
+	color: black;
+	text-decoration: none;
+    animation: fadeIn 1.2s both;
+}
+
+#Croissant {
+	float: right;
+	padding: 2em;
+	padding-right: 3em;
+    animation: fadeIn 1.2s both;
+}
+
+.InfoCrossaint, .InfoMacchiato {
+	padding-left: 1em;
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	clear: both;
+}
+
+#parallax2 a:hover, #parallax3 a:hover {
+	color: rgb(34, 126, 121);
+  	text-shadow:
+    	0 0 7px rgb(34, 126, 121),
+    	0 0 10px rgb(34, 126, 121),
+    	0 0 21px rgb(34, 126, 121);
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 6%;
+}
+
+button:hover {
+	color: rgb(34, 126, 121);
+  	text-shadow:
+    	0 0 7px rgb(34, 126, 121),
+    	0 0 10px rgb(34, 126, 121),
+    	0 0 21px rgb(34, 126, 121);
+}

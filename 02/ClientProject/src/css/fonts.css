@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Salted Mocha";
+    src: url(../fonts/saltedmocha-regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Rustico;
+    src: url("../fonts/Rustico-Regular.otf") format("opentype");
+}
+
+/** font-family: 'Delicious Handrawn', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
