@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #8c68b0;
+    background-attachment: fixed;
+}
+
+.content {
+    background-image: url("img/StarryBackground.jpg");
+
+}
+
+#parallax1 {
+    height: 1034px;
+    background-image: url("img/GrassCrop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 90%;
+}
+
+#parallax2 {
+    height: 830px;
+    background-image: url("img/VisionAVTR.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 75%;
+}
+
+#parallax3 {
+    height: 1134px;
+    background-image: url("img/Rog.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 75%;
+}
+
+#parallax4 {
+    height: 1034px;
+    background-image: url("img/Mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 85%;
+}
+
+.float {
+    float: left;
+}
+
+#image {
+    padding: 35px;
+}
+
+#purpurFiller {
+    padding-top: 150px;
+    margin: 0;
+}
+
+.content p {
+    margin: 0;
+}
