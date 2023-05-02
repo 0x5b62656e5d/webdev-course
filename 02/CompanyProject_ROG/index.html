@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous">
+        </script>
+
+        <link href="./src/index.css" rel="stylesheet">
+        <script src="./src/index.js" defer></script>
+
+        <link href="./img/logo.png" rel="icon">
+
+        <title>ROG - Home</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark sticky-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="ROG Logo" style="width: 60px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Apparel, Bags, & Gear</a></li>
+                                <li><a class="dropdown-item" href="#">Cooling</a></li>
+                                <li><a class="dropdown-item" href="#">Graphics Cards</a></li>
+                                <li><a class="dropdown-item" href="#">Headsets & Audio</a></li>
+                                <li><a class="dropdown-item" href="#">Keyboards</a></li>
+                                <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                <li><a class="dropdown-item" href="#">Mice & Mouse Pads</a></li>
+                                <li><a class="dropdown-item" href="#">Monitors</a></li>
+                                <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                                <li><a class="dropdown-item" href="#">Networking</a></li>
+                                <li><a class="dropdown-item" href="#">Phones</a></li>
+                                <li><a class="dropdown-item" href="#">Power Supply Units</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.asus.com"><svg xmlns="http://www.w3.org/2000/svg" width="71.418" height="15.556" viewBox="0 0 71.418 15.556" svg-inline="" src="@images/logo/asus-logo.svg" alt="asus" role="none" focusable="false"><g data-name="组件 69 – 1"><path fill="#797979" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M52.803 15.056l.009-3.84h13.593a1.609 1.609 0 00.649-.183.818.818 0 00.256-.578c0-.737-.613-.769-.921-.785l-9.882-.815A4.615 4.615 0 0154.3 7.812a3.758 3.758 0 01-1.271-2.052s12.766.746 14.184.877a4.359 4.359 0 013.618 3.351 6.077 6.077 0 01-.022 1.57 4.233 4.233 0 01-4.008 3.5zm-12.767-.017l-.354-.025a4.216 4.216 0 01-3.621-3.534v-.609a5.825 5.825 0 01-.077.656 4.261 4.261 0 01-3.52 3.5h-18.3v-9.8l3.8.276v5.738h13.688a.768.768 0 00.807-.74c.007-.738-.562-.814-.864-.828 0 0-9.444-.774-9.782-.806a4.988 4.988 0 01-2.284-1.074 3.976 3.976 0 01-1.2-2.258s12.694 1 14.119 1.129c2.392.221 3.494 2.753 3.59 3.327 0 0 .008.059.015.164V4.642l3.881.278v5.078a1.23 1.23 0 001.119 1.273h6.6a1.264 1.264 0 001.267-1.285v-4.46l3.843.227v5.358c0 3.627-3.817 3.931-3.817 3.931zM.918 15.021L7.651 4.597l4.341.458-6.472 9.966zM52.803 4.363v-.311a5.491 5.491 0 01.973-2A4.27 4.27 0 0156.918.5h14v3.866zm-3.937 0V.519h3.909v3.844zm-12.844 0V.519h3.912v3.844zm-28.216 0s1.589-2.59 1.983-3.1a1.682 1.682 0 011.4-.738h6.946v3.527a5.5 5.5 0 01.977-2A4.252 4.252 0 0122.253.496h13.086v3.863z" data-name="联合 1"></path></g></svg></a>
+                        </li>
+                        <li class="nav-item" id="colorMode">
+                            <button id="colorModeIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+
+            <!--Carousel - Featured products-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="max-height: 100vh;">
+                        
+                		    <!-- Indicators/dots -->
+                		    <div class="carousel-indicators">
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                		    	<button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                		    </div>
+
+                		    <!-- The slideshow/carousel -->
+                		    <div class="carousel-inner">
+                		        <div class="carousel-item active" id="carousel1">
+                		            <img src="./img/Home_Carousel/Carousel1.png" alt="Flow Z13 Acrnm" class="d-block" style="width: 100%">
+                		            <div class="carousel-caption">
+                		                <h3>ROG Flow Z13 Acrnm</h3> <!--!Change font style, same with other captions-->
+                		    		</div>
+                		      	</div>
+                		      	<div class="carousel-item" id="carousel2">
+                		        	<img src="./img/Home_Carousel/Carousel2.png" alt="Strix G17 (2023)" class="d-block" style="width: 100%;">
+                		        	<div class="carousel-caption">
+                		        	  	<h3>ROG Strix G17</h3>
+                		        	</div> 
+                		    	</div>
+                		    	<div class="carousel-item" id="carousel3">
+                		        	<img src="./img/Home_Carousel/Carousel3.png" alt="M16 (2023)" class="d-block" style="width: 100%;">
+                		        	<div class="carousel-caption">
+                		        		<h3 style="color: white !important;">ROG Zephyrus M16</h3>
+                		        	</div>  
+                		    	</div>
+		        				<div class="carousel-item" id="carousel4">
+                		        	<img src="./img/Home_Carousel/Carousel4.png" alt="Flow X13 (2023)" class="d-block" style="width:100%">
+                		        	<div class="carousel-caption">
+                		        		<h3 style="color: white !important;">ROG Flow X13</h3>
+                		        	</div>  
+                		    	</div>
+		        				<div class="carousel-item" id="carousel5">
+                		        	<img src="./img/Home_Carousel/Carousel5.png" alt="Flow G14 (2022)" class="d-block" style="width:100%">
+                		        	<div class="carousel-caption">
+                		        		<h3 style="color: white !important;">ROG Zephyrus G14</h3>
+                		        	</div>  
+                		    	</div>
+		        				<div class="carousel-item" id="carousel6">
+                		        	<img src="./img/Home_Carousel/Carousel6.png" alt="ROG Strix RTX 4090 OC" class="d-block" style="width:100%">
+                		        	<div class="carousel-caption">
+                		        		<h3>ROG Strix RTX 4090 OC</h3>
+                		        	</div>  
+                		    	</div>
+		        				<div class="carousel-item" id="carousel7">
+                		        	<img src="./img/Home_Carousel/Carousel7.png" alt="ROG Phone 7 Ultimate" class="d-block" style="width:100%">
+                		        	<div class="carousel-caption">
+                		        		<h3>ROG Phone 7 Ultimate</h3>
+                		        	</div>  
+                		    	</div>
+		        				<div class="carousel-item" id="carousel8">
+                		        	<img src="./img/Home_Carousel/Carousel8.png" alt="ROG Ally" class="d-block" style="width:100%">
+                		        	<div class="carousel-caption">
+                		        		<h3 style="color: rgb(31, 41, 55) !important;">ROG Ally</h3>
+                		        	</div>  
+                		    	</div>
+                		    </div>
+
+                		    <!-- Left and right controls/icons -->
+                		    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                		      	<span class="carousel-control-prev-icon"></span>
+                		    </button>
+                		    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                		      	<span class="carousel-control-next-icon"></span>
+                		    </button>
+                		</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Flex - Product categories-->
+            <h2 id="productsHeader">Products</h2>
+
+            <div class="Products">
+                <div class="Row1">
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Bag.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Apparel, Bags, & Gear</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Cooling.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Cooling</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/GPU.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Graphics Cards</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Headset.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Headsets & Audio</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Keyboard.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Keyboards</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Laptop.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Laptops</p>
+                    </div>
+                </div>
+
+                <div class="Row2">                    
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Mouse.png" id="productImg" alt="Networking" style="padding-bottom: 0;">
+                        <p id="itemDesc">Mice & Mouse Pads</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Monitor.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Monitors</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Motherboard.png" id="productImg" alt="Networking" style="width: 200px;">
+                        <p id="itemDesc">Motherboards</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Networking.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Networking</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/Phone.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Phones</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/Home_Products_Flex/PSU.png" id="productImg" alt="Networking">
+                        <p id="itemDesc">Power Supply Units</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./img/Home_News/News1.webp" alt="ROG 1000W PSU" width="100%">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                    <p>Power supplies are at the heart of all gaming machines, built to provide your system with clean and stable power for years and years. As we continue to look to the future of gaming PSU design, ROG is proud to announce that all Loki, Strix Gold Aura Edition, and TUF Gaming Gold power supplies will natively support the ATX 3.0 standard. That means that every PSU will come with a native 16-pin to 16-pin 12VHPWR cable to pair with current and upcoming graphics cards. For owners of select current models, we are also offering a free native 2x8-pin to 16-pin 12VHPWR cable to keep your build looking as sleek as possible and fully compatible with the graphics cards of tomorrow.</p>
+                </div>
+
+                <hr>
+
+                <div class="col-md-8 d-flex align-items-center">
+                    <p>ROG and renowned technical apparel firm ACRONYM first collaborated in 2020 to design a special edition version of the Zephyrus G14, and we’ve joined forces again to leverage their design expertise for an all-new project. ACRONYM knew exactly what ROG device they wanted to work with for their next project: the ROG Flow Z13. The Flow Z13 debuted in 2022 as the world’s most powerful gaming tablet, and is an incredibly versatile device on its own, but ACRONYM’s design team took it to a whole new level. By incorporating functional elements from their existing bag designs, as well as a bold reimagining of what a tablet chassis should be, they built the ROG Flow Z13-ACRNM RMT02, a Flow Z13 for new forms of versatility and portability. </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Home_News/News2.webp" alt="ROG Z13 Acrnm" width="100%">
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="locations" class="row text-center" style="padding-bottom: 35px;">
+                <div class="col-md-4" id="location">
+                    <p>Syntrend shop</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6643874964707!2d121.52878307643887!3d25.045461177808917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97b582d5a73%3A0x9b1e56ab48807d62!2sSyntrend!5e0!3m2!1sen!2stw!4v1682759092757!5m2!1sen!2stw" class="embed-responsive" width="500vw" height="450vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4" id="location">
+                    <p>Guang Hua Digital Plaza shop</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.68891977682!2d121.52973947643878!3d25.044628977809527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9634439ce7d%3A0x4cd6385059c7f187!2sGuang%20Hua%20Digital%20Plaza!5e0!3m2!1sen!2stw!4v1682759153279!5m2!1sen!2stw" class="embed-responsive" width="500vw" height="450vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4" id="location">
+                    <p>Asus Royal Club - Guang Hua shop</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.707549886416!2d121.52323537643893!3d25.04399697780998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97a83275587%3A0xb64e50093ffc57c6!2sAsus%20Royal%20Club%20Guanghua!5e0!3m2!1sen!2stw!4v1682759913949!5m2!1sen!2stw" class="embed-responsive" width="500vw" height="450vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="footer" class="text-center text-lg-center">
+            <div class="footerText p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Asus ROG 2023&#8482;
+                <a class="footerText footerLink" href="https://rog.asus.com/">rog.asus.com</a>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="cookieConsent" tabindex="-1" aria-labelledby="cookieconsentLabel1" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="false">
+            <div class="modal-dialog modal-sm d-flex justify-content-center">
+                <div class="modal-content text-center">
+                    <div class="modal-header d-flex justify-content-center">
+                        <h5 class="modal-title text-primary" id="cookieconsentLabel1">Cookies & Privacy</h5>
+                    </div>
+                    <div class="modal-body p-4">
+                        This website uses cookies to ensure you get the best experience on our website.
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary cookieButton" href="#">Learn more</button>
+                        <button type="button" class="btn btn-primary cookieButton" data-mdb-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
