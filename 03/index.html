@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <style>
+            button {
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        </style>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            $ = element => document.querySelector(element);
+
+            document.addEventListener("DOMContentLoaded", () => {
+                blockImgOver = () => {
+                    $("#BlockImg").src = "./img/RedstoneLight.png";
+                }
+                resetBlockImg = () => {
+                    $("#BlockImg").src = "./img/Brick.png";
+                }
+                blockImgDown = () => {
+                    $("#BlockImg").src = "./img/Glowstone.png";
+                }
+            });
+        </script>
+        <script src="./index.js" defer></script>
+
+        <title>JS</title>
+    </head>
+
+    <body>
+        <h1 id="minecraft" onmouseover='mouseOver()' onmouseout='mouseOut()' onmousedown='mouseDown()' onmouseup='mouseUp()'>I love minecraft!</h1>
+        <button onclick="document.getElementById('demo').innerText = Date()">Get date</button>
+        <p id="demo">demo</p>
+        <button onclick="document.getElementById('demo').innerText = 'demo'">Undo</button>
+
+        <br>
+
+        <button id="styleButton">Style it</button>
+        <p id="hello">Hello world!</p>
+        <button onclick="document.getElementById('hello').style.color = 'black', document.getElementById('hello').style.fontSize='inherit'">Undo</button>
+        <button onclick="hideButton()">Poof</button>
+        <button onclick="document.getElementById('hello').style.display = 'block'">Unpoof</button>
+
+        <br>
+        
+        <button onclick="showImage(); $('#EmeraldOre').src='./img/EmeraldOre.png';">emeralds</button>
+        <button onclick="$('#EmeraldOre').src='./img/PurpurBlock.png'">No! Purpur!</button>
+        <img src="./img/EmeraldOre.png" id="EmeraldOre" alt="Emerald Ore" style="display: none;">
+        <div data-aos="flip-up"><img src="./img/Brick.png" id="BlockImg" alt="Brick" onmouseover="blockImgOver()" onmouseout="resetBlockImg()" onmousedown="blockImgDown()" onmouseup="resetBlockImg()"></div>
+
+        <div data-aos="fade-up">Content Goes Here!</div>
+
+        <script>
+            AOS.init({ duration: 1500 });
+        </script>
+    </body>
+</html>
